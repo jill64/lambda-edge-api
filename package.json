@@ -1,7 +1,7 @@
 {
   "name": "lambda-edge-api",
   "description": "Deploy your API to the edge using AWS-CDK",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
@@ -10,7 +10,8 @@
   "homepage": "https://github.com/jill64/lambda-edge-api#readme",
   "files": [
     "dist",
-    "bin"
+    "bin",
+    "cdk.json"
   ],
   "exports": {
     ".": {
