@@ -1,5 +1,5 @@
 {
-  "name": "@jill64/lambda-edge-api",
+  "name": "lambda-edge-api",
   "description": "Deploy your API to the edge using AWS-CDK",
   "version": "0.0.0",
   "type": "module",
