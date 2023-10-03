@@ -7,9 +7,9 @@
     "test": "vitest --run"
   },
   "devDependencies": {
-    "@jill64/types-lambda": "^0.1.8",
-    "dotenv": "^16.3.1",
-    "tsx": "^3.13.0",
-    "vitest": "^0.34.6"
+    "@jill64/types-lambda": "0.1.9",
+    "dotenv": "16.3.1",
+    "tsx": "3.13.0",
+    "vitest": "0.34.6"
   }
 }
