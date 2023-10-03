@@ -14,6 +14,7 @@ export const build = async (options: BuildOptions) => {
   await mkdir(buildDir, { recursive: true })
 
   const binDir = path.join(root, 'bin')
+  const edgeDir = path.join(buildDir, 'edge')
 
   await Promise.all([
     copyFile(path.join(binDir, 'synth.ts'), path.join(buildDir, 'synth.ts')),
@@ -34,7 +35,7 @@ export const build = async (options: BuildOptions) => {
       external: ['node:*', '@aws-sdk/*'],
       ...options?.esbuild,
       entryPoints: [options.entryPoint],
-      outfile: path.join(buildDir, 'index.js'),
+      outfile: path.join(edgeDir, 'index.js'),
       platform: 'node'
     })
   ])
@@ -42,7 +43,7 @@ export const build = async (options: BuildOptions) => {
   // Make .env file
   if (options.env) {
     await writeFile(
-      path.join(buildDir, '.env'),
+      path.join(edgeDir, '.env'),
       Object.entries(options.env).reduce(
         (acc, [key, value]) => `${acc}${key}=${value}\n`,
         ''
