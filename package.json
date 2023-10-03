@@ -32,6 +32,7 @@
     "build": "tsc && publint",
     "build:demo": "cd demo && pnpm build",
     "deploy:demo": "cd demo && pnpm deploy",
+    "deploy:demo-dev": "cd demo && pnpm deploy:dev",
     "test": "cd demo && pnpm test",
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint ."
