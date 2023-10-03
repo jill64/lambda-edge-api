@@ -1,7 +1,7 @@
 {
   "name": "@jill64/lambda-edge-api",
   "description": "Deploy your API to the edge using AWS-CDK",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
