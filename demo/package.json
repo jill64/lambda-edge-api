@@ -3,7 +3,6 @@
   "scripts": {
     "build": "tsx scripts/build.ts",
     "deploy": "tsx scripts/deploy.ts",
-    "deploy:dev": "tsx scripts/deploy-dev.ts",
     "test": "vitest --run"
   },
   "devDependencies": {

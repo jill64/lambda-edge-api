@@ -1,7 +1,7 @@
 {
   "name": "lambda-edge-api",
   "description": "Deploy your API to the edge using AWS-CDK",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
@@ -32,7 +32,6 @@
     "build": "tsc && publint",
     "build:demo": "cd demo && pnpm build",
     "deploy:demo": "cd demo && npm run deploy",
-    "deploy:demo-dev": "cd demo && npm run deploy:dev",
     "test": "cd demo && pnpm test",
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint ."
