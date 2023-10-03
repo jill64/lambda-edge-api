@@ -38,6 +38,7 @@ jobs:
         run: pnpm deploy:demo
 
   test:
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
