@@ -1,0 +1,55 @@
+{
+  "name": "@jill64/lambda-edge-api",
+  "description": "Deploy your API to the edge using AWS-CDK",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "bugs": "https://github.com/jill64/lambda-edge-api/issues",
+  "homepage": "https://github.com/jill64/lambda-edge-api#readme",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "keywords": [
+    "aws",
+    "aws-cdk"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jill64/lambda-edge-api.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc && publint",
+    "build:demo": "cd demo && pnpm build",
+    "deploy:demo": "cd demo && pnpm deploy",
+    "deploy:demo-dev": "cd demo && pnpm deploy:dev",
+    "test": "cd demo && pnpm test",
+    "format": "prettier --write .",
+    "lint": "prettier --check . && eslint ."
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "6.7.4",
+    "@typescript-eslint/parser": "6.7.4",
+    "eslint": "8.50.0",
+    "prettier": "3.0.3",
+    "publint": "0.2.3"
+  },
+  "dependencies": {
+    "@types/node": "^20.8.2",
+    "aws-cdk": "^2.99.1",
+    "aws-cdk-lib": "2.99.1",
+    "constructs": "^10.2.70",
+    "esbuild": "^0.19.4",
+    "typescript": "5.2.2"
+  }
+}
