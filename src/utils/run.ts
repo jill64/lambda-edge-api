@@ -9,7 +9,7 @@ export const run = (cmd: string) =>
     })
 
     res.stdout.on('data', (data) => console.log(data.toString()))
-    res.stderr.on('data', (data) => console.log(data.toString()))
+    res.stderr.on('data', (data) => console.error(data.toString()))
 
     res.on('close', (code) => {
       if (code !== 0) {
