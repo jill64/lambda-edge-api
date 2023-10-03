@@ -1,5 +1,8 @@
 # lambda-edge-api
 
+[![CI](https://github.com/jill64/lambda-edge-api/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/lambda-edge-api/actions/workflows/ci.yml)
+[![Deploy - Test](https://github.com/jill64/lambda-edge-api/actions/workflows/deploy-test.yml/badge.svg)](https://github.com/jill64/lambda-edge-api/actions/workflows/deploy-test.yml)
+
 Deploy your API to the edge using AWS-CDK
 
 ## Install
