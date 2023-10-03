@@ -1,12 +1,10 @@
 name: Deploy - Test
 
 on:
-  push:
-    branches: main
   pull_request:
     branches: main
 
-concurrency: deploy-test${{ (github.event_name == 'pull_request' && '-dev') || '' }}
+concurrency: deploy-test
 
 jobs:
   deploy:
@@ -37,7 +35,7 @@ jobs:
         run: pnpm build
 
       - name: Deploy
-        run: pnpm deploy:demo${{ (github.event_name == 'pull_request' && '-dev') || '' }}
+        run: pnpm deploy:demo
 
   # test:
   #   runs-on: ubuntu-latest
