@@ -16,7 +16,7 @@ export class CDKStack extends Stack {
     super(scope, id, props)
 
     const edge = new aws_cloudfront.experimental.EdgeFunction(this, 'Edge', {
-      code: aws_lambda.Code.fromAsset('edge'),
+      code: aws_lambda.Code.fromAsset('build/edge'),
       handler: 'index.handler',
       runtime: aws_lambda.Runtime.NODEJS_18_X,
       timeout: Duration.seconds(30),
