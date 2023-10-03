@@ -1,0 +1,65 @@
+name: Deploy - Test
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+concurrency: deploy-test${{ (github.event_name == 'pull_request' && '-dev') || '' }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3
+        with:
+          node-version: latest
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+          run_install: true
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@8c3f20df09ac63af7b3ae3d7c91f105f857d8497 # v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+
+      - name: Build
+        run: pnpm build
+
+      - name: Deploy
+        run: pnpm deploy:demo${{ (github.event_name == 'pull_request' && '-dev') || '' }}
+
+  # test:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+
+  #     - name: Setup Node.js
+  #       uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3
+  #       with:
+  #         node-version: latest
+
+  #     - name: Setup pnpm
+  #       uses: pnpm/action-setup@v2
+  #       with:
+  #         version: latest
+  #         run_install: true
+
+  #     - name: Install Playwright
+  #       run: pnpx playwright install
+
+  #     - name: Test
+  #       run: pnpm test
+  #       env:
+  #         PREVIEW_URL: ${{ (github.event_name == 'pull_request' && vars.PREVIEW_URL_DEV) || vars.PREVIEW_URL }}
