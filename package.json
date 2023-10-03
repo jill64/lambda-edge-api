@@ -9,7 +9,8 @@
   "bugs": "https://github.com/jill64/lambda-edge-api/issues",
   "homepage": "https://github.com/jill64/lambda-edge-api#readme",
   "files": [
-    "dist"
+    "dist",
+    "bin"
   ],
   "exports": {
     ".": {
