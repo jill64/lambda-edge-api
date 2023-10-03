@@ -4,6 +4,13 @@ export const handler: OriginRequestHandler<'custom'> = () => {
   return {
     status: '200',
     body: 'Hello, world!',
-    bodyEncoding: 'text'
+    headers: {
+      'content-type': [
+        {
+          key: 'Content-Type',
+          value: 'text/plain'
+        }
+      ]
+    }
   }
 }
