@@ -37,7 +37,7 @@ export class CDKStack extends Stack {
           aws_cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
         originRequestPolicy:
           aws_cloudfront.OriginRequestPolicy.ALL_VIEWER_EXCEPT_HOST_HEADER,
-        origin: new aws_cloudfront_origins.HttpOrigin('https://example.com'),
+        origin: new aws_cloudfront_origins.HttpOrigin('example.com'),
         cachePolicy: aws_cloudfront.CachePolicy.CACHING_DISABLED,
         allowedMethods: aws_cloudfront.AllowedMethods.ALLOW_ALL,
         edgeLambdas: [
