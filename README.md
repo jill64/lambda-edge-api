@@ -27,6 +27,8 @@ npm i -D lambda-edge-api
 import { build } from 'lambda-edge-api'
 
 build({
+  name: 'Lambda-Edge-API',
+  
   // Auto Deploy
   deploy: true
 

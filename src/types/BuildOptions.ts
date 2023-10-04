@@ -20,9 +20,8 @@ export type BuildOptions = {
 
   /**
    * AWS-CDK CloudFormation Stack Name
-   * @default 'Lambda-Edge-API'
    */
-  name?: string
+  name: string
 
   /**
    * Lambda memory size [MB]
