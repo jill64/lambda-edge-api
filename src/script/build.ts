@@ -45,7 +45,7 @@ export const build = async (options: BuildOptions) => {
     await writeFile(
       path.join(edgeDir, '.env'),
       Object.entries(options.env).reduce(
-        (acc, [key, value]) => `${acc}${key}=${value}\n`,
+        (acc, [key, value]) => `${acc}${key}="${value}"\n`,
         ''
       )
     )
