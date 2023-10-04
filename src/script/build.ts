@@ -26,7 +26,7 @@ export const build = async (options: BuildOptions) => {
       '128 /* $$__MEMORY_SIZE__$$ */': options.memory?.toString() ?? '128',
       __DOMAIN_NAME__: options.domain?.fqdn ?? '',
       __CERTIFICATE_ARN__: options.domain?.certificateArn ?? '',
-      __STACK_NAME__: options.name ?? 'Lambda-Edge-API'
+      __STACK_NAME__: options.name
     }),
     esbuild({
       format: 'cjs',
