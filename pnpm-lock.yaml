@@ -37,8 +37,8 @@ importers:
   demo:
     devDependencies:
       '@jill64/types-lambda':
-        specifier: 0.1.11
-        version: 0.1.11(typescript@5.2.2)
+        specifier: 0.1.13
+        version: 0.1.13(typescript@5.2.2)
       dotenv:
         specifier: 16.3.1
         version: 16.3.1
@@ -529,12 +529,12 @@ packages:
       '@sinclair/typebox': 0.27.8
     dev: true
 
-  /@jill64/types-lambda@0.1.11(typescript@5.2.2):
-    resolution: {integrity: sha512-peQghNDraK6gKWGCyiu5PDthh16pGv1Nx/lDkoidH1a10dhMsWvBm1rKg7vFmrHj45Fpa9nZWTTKSGBCbzbd7g==}
+  /@jill64/types-lambda@0.1.13(typescript@5.2.2):
+    resolution: {integrity: sha512-Rp9nDnZVXooAEhIvfyKhaigcXq5qa0NqIhINbpUsc9mWG1uK2GhYKTuWpoLU2GsbCjyK7qMSJ4/J7/3tG/CHUw==}
     peerDependencies:
       typescript: ^5.0.0
     dependencies:
-      '@types/node': 20.8.2
+      '@types/node': 20.8.4
       typescript: 5.2.2
     dev: true
 
@@ -583,6 +583,12 @@ packages:
 
   /@types/node@20.8.2:
     resolution: {integrity: sha512-Vvycsc9FQdwhxE3y3DzeIxuEJbWGDsnrxvMADzTDF/lcdR9/K+AQIeAghTQsHtotg/q0j3WEOYS/jQgSdWue3w==}
+
+  /@types/node@20.8.4:
+    resolution: {integrity: sha512-ZVPnqU58giiCjSxjVUESDtdPk4QR5WQhhINbc9UBrKLU68MX5BF6kbQzTrkwbolyr0X8ChBpXfavr5mZFKZQ5A==}
+    dependencies:
+      undici-types: 5.25.3
+    dev: true
 
   /@types/semver@7.5.3:
     resolution: {integrity: sha512-OxepLK9EuNEIPxWNME+C6WwbRAOOI2o2BaQEGzz5Lu2e4Z5eDnEo+/aVEDMIXywoJitJ7xWd641wrGLZdtwRyw==}
@@ -1819,6 +1825,10 @@ packages:
 
   /ufo@1.3.1:
     resolution: {integrity: sha512-uY/99gMLIOlJPwATcMVYfqDSxUR9//AUcgZMzwfSTJPDKzA1S8mX4VLqa+fiAtveraQUBCz4FFcwVZBGbwBXIw==}
+    dev: true
+
+  /undici-types@5.25.3:
+    resolution: {integrity: sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==}
     dev: true
 
   /universalify@2.0.0:
