@@ -4,3 +4,4 @@ node_modules
 /build
 /cdk.out
 .env
+package-lock.json
