@@ -1,7 +1,7 @@
 {
   "name": "lambda-edge-api",
   "description": "Deploy your API to the edge using AWS-CDK",
-  "version": "0.2.17",
+  "version": "0.2.18",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
@@ -26,9 +26,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/lambda-edge-api.git"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "scripts": {
     "build": "tsc && npx publint",
