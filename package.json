@@ -27,9 +27,6 @@
     "type": "git",
     "url": "https://github.com/jill64/lambda-edge-api.git"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "tsc && npx publint",
     "build:demo": "cd demo && pnpm build",
