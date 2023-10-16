@@ -32,7 +32,6 @@
     "build:demo": "cd demo && pnpm build",
     "deploy:demo": "cd demo && npm run deploy",
     "prepack": "npm run build",
-    "test": "cd demo && pnpm test",
     "format": "npx prettier --write .",
     "lint": "npx prettier --check . && npx eslint && npx depcheck"
   },
