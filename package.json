@@ -33,7 +33,7 @@
     "deploy:demo": "cd demo && npm run deploy",
     "prepack": "npm run build",
     "format": "npx prettier --write .",
-    "lint": "npx prettier --check . && npx eslint"
+    "lint": "npx prettier --check . && npx eslint && npx depcheck"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "6.7.5",
@@ -41,7 +41,6 @@
   },
   "dependencies": {
     "@types/node": "20.8.6",
-    "aws-cdk": "2.101.0",
     "aws-cdk-lib": "2.101.0",
     "constructs": "10.3.0",
     "esbuild": "0.19.4",
