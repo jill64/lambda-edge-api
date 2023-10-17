@@ -43,7 +43,7 @@
     "@types/node": "20.8.6",
     "aws-cdk-lib": "2.101.1",
     "constructs": "10.3.0",
-    "esbuild": "0.19.4",
+    "esbuild": "0.19.5",
     "typescript": "5.2.2"
   }
 }
