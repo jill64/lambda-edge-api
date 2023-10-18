@@ -1,7 +1,7 @@
 {
   "name": "lambda-edge-api",
   "description": "Deploy your API to the edge using AWS-CDK",
-  "version": "0.2.20",
+  "version": "0.2.21",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
