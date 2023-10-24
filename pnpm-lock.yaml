@@ -34,8 +34,8 @@ importers:
   demo:
     devDependencies:
       '@jill64/types-lambda':
-        specifier: 1.0.0
-        version: 1.0.0(typescript@5.2.2)
+        specifier: 1.0.1
+        version: 1.0.1(typescript@5.2.2)
       dotenv:
         specifier: 16.3.1
         version: 16.3.1
@@ -526,8 +526,8 @@ packages:
       '@sinclair/typebox': 0.27.8
     dev: true
 
-  /@jill64/types-lambda@1.0.0(typescript@5.2.2):
-    resolution: {integrity: sha512-SMb+TYDxrDM7YyhySBtcwoiCCo2dNkgHwsUPnGJ5a15IcmGP7/TK/bEqRlO4gvj6rIl7rOt1nGNjpEXDHS6IXA==}
+  /@jill64/types-lambda@1.0.1(typescript@5.2.2):
+    resolution: {integrity: sha512-dbtPMzgRYieYcs+VoANaZe8Fvhoqq+jIBhcKzh/BPFlSzwDo5kltHVDB5ZIrwL/RQYr3D7A1erfEki4eF4XAqQ==}
     peerDependencies:
       typescript: ^5.0.0
     dependencies:
