@@ -33,11 +33,12 @@
     "deploy:demo": "cd demo && npm run deploy",
     "prepack": "npm run build",
     "format": "npx prettier --write .",
-    "lint": "npx prettier --check . && npx eslint && npx depcheck"
+    "lint": "npx prettier --check . && npx eslint . && npx depcheck"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "6.9.0",
-    "@typescript-eslint/parser": "6.9.0"
+    "@typescript-eslint/parser": "6.9.0",
+    "eslint-plugin-deprecation": "2.0.0"
   },
   "dependencies": {
     "@types/node": "20.8.7",
