@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@types/node": "20.8.9",
-    "aws-cdk-lib": "2.102.0",
+    "aws-cdk-lib": "2.102.1",
     "constructs": "10.3.0",
     "esbuild": "0.19.5",
     "typescript": "5.2.2"
