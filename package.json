@@ -21,7 +21,10 @@
   },
   "keywords": [
     "aws",
-    "aws-cdk"
+    "aws-cdk",
+    "lambda",
+    "edge",
+    "api"
   ],
   "repository": {
     "type": "git",
