@@ -6,8 +6,6 @@
 
 🌐 Deploy your API to the edge using AWS-CDK
 
-
-
 <!----- END GHOST DOCS HEADER ----->
 
 ## Install
