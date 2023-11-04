@@ -6,6 +6,12 @@
 
 🌐 Deploy your API to the edge using AWS-CDK
 
+## Install
+
+```sh
+npm i lambda-edge-api
+```
+
 <!----- END GHOST DOCS HEADER ----->
 
 ## Install

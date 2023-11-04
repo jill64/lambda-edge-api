@@ -11,7 +11,9 @@
   "files": [
     "dist",
     "bin",
-    "cdk.json"
+    "cdk.json",
+    "!*.test.*",
+    "!*.spec.*"
   ],
   "exports": {
     ".": {
@@ -20,11 +22,11 @@
     }
   },
   "keywords": [
+    "api",
     "aws",
-    "aws-cdk",
-    "lambda",
+    "cdk",
     "edge",
-    "api"
+    "lambda"
   ],
   "repository": {
     "type": "git",
