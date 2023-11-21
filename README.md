@@ -6,7 +6,7 @@
 
 🌐 Deploy your API to the edge using AWS-CDK
 
-## Install
+## Installation
 
 ```sh
 npm i lambda-edge-api
