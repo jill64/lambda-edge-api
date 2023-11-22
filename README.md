@@ -2,9 +2,15 @@
 
 # lambda-edge-api
 
-[![deploy-test.yml](https://github.com/jill64/lambda-edge-api/actions/workflows/deploy-test.yml/badge.svg)](https://github.com/jill64/lambda-edge-api/actions/workflows/deploy-test.yml)
+[![npm-version](https://img.shields.io/npm/v/lambda-edge-api)](https://npmjs.com/package/lambda-edge-api) [![npm-license](https://img.shields.io/npm/l/lambda-edge-api)](https://npmjs.com/package/lambda-edge-api) [![npm-download-month](https://img.shields.io/npm/dm/lambda-edge-api)](https://npmjs.com/package/lambda-edge-api) [![npm-min-size](https://img.shields.io/bundlephobia/min/lambda-edge-api)](https://npmjs.com/package/lambda-edge-api) [![deploy-test.yml](https://github.com/jill64/lambda-edge-api/actions/workflows/deploy-test.yml/badge.svg)](https://github.com/jill64/lambda-edge-api/actions/workflows/deploy-test.yml)
 
 🌐 Deploy your API to the edge using AWS-CDK
+
+## Installation
+
+```sh
+npm i lambda-edge-api
+```
 
 <!----- END GHOST DOCS HEADER ----->
 
