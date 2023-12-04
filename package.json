@@ -35,7 +35,7 @@
   "scripts": {
     "build": "tsc && npx publint",
     "build:demo": "cd demo && pnpm build",
-    "deploy:demo": "cd demo && pnpm deploy",
+    "deploy:demo": "cd demo && npm run deploy",
     "prepack": "pnpm build",
     "format": "npx prettier -w .",
     "lint": "pnpm lint:lib && pnpm lint:demo",
