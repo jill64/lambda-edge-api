@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4
         with:
-          node-version: latest
+          node-version: 20
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
