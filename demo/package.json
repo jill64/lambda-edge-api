@@ -3,7 +3,8 @@
   "scripts": {
     "build": "npx tsx scripts/build.ts",
     "deploy": "npx tsx scripts/deploy.ts",
-    "test": "vitest --run"
+    "test": "vitest",
+    "lint": "npx eslint ."
   },
   "devDependencies": {
     "@jill64/types-lambda": "1.0.11",
