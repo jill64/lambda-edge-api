@@ -22,8 +22,8 @@ importers:
         specifier: 1.0.0
         version: 1.0.0(typescript@5.3.2)
       '@jill64/prettier-config':
-        specifier: 0.0.2
-        version: 0.0.2
+        specifier: 1.0.0
+        version: 1.0.0
       '@types/node':
         specifier: 20.10.3
         version: 20.10.3
@@ -317,8 +317,8 @@ packages:
       - typescript
     dev: true
 
-  /@jill64/prettier-config@0.0.2:
-    resolution: {integrity: sha512-NFJtEw00inP/qp5+cwZvrIbPgnJPTTUNwuxOXIKsZ83z6sv1fPkqBfuHESH2fOc9m3NHtJKO4lQIO3RnBiJhRw==}
+  /@jill64/prettier-config@1.0.0:
+    resolution: {integrity: sha512-KuryQDStqkQ/zKR9Q7JXiW927m7SvwirQo6Oohss1Q9cRyYS2JOyhtcBavZnoEhH4pHJkaigfjUXA3em4n6egA==}
     dev: true
 
   /@jill64/types-lambda@1.1.0(typescript@5.3.2):
