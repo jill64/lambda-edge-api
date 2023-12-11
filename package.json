@@ -5,7 +5,12 @@
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
-  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "author": {
+    "name": "jill64",
+    "email": "143883742+jill64@users.noreply.github.com",
+    "url": "https://github.com/jill64",
+    "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
+  },
   "bugs": "https://github.com/jill64/lambda-edge-api/issues",
   "homepage": "https://github.com/jill64/lambda-edge-api#readme",
   "files": [
@@ -30,7 +35,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jill64/lambda-edge-api.git"
+    "url": "https://github.com/jill64/lambda-edge-api.git",
+    "image": "https://opengraph.githubassets.com/9b995ff5c85dd384ba23c644d031ebcede4aeb741aa2b1809a729ebca899b2ae/jill64/lambda-edge-api"
   },
   "scripts": {
     "build": "tsc && npx publint",
@@ -44,7 +50,7 @@
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
-    "@jill64/eslint-config-ts": "1.0.1",
+    "@jill64/eslint-config-ts": "1.0.2",
     "@jill64/prettier-config": "1.0.0",
     "@types/node": "20.10.4",
     "typescript": "5.3.3"
