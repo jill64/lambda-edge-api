@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       aws-cdk-lib:
-        specifier: 2.115.0
-        version: 2.115.0(constructs@10.3.0)
+        specifier: 2.116.0
+        version: 2.116.0(constructs@10.3.0)
       constructs:
         specifier: 10.3.0
         version: 10.3.0
@@ -738,8 +738,8 @@ packages:
     resolution: {integrity: sha512-jgsaNduz+ndvGyFt3uSuWqvy4lCnIJiovtouQN5JZHOKCS2QuhEdbcQHFhVksz2N2U9hXJo8odG7ETyWlEeuDw==}
     dev: true
 
-  /aws-cdk-lib@2.115.0(constructs@10.3.0):
-    resolution: {integrity: sha512-PGIwmjo9BcviKxuMfMlUCwevUjwXnaS5h8fxZOM6bN1HXCS/wIusft4tMmkiNYjPiNE1sHJbCDIbxxntCQ/7jg==}
+  /aws-cdk-lib@2.116.0(constructs@10.3.0):
+    resolution: {integrity: sha512-LOYJGtKLvf/wVt3UMwWQxvxgAM681ZV/BbGGB6aEqc7+4TMfbYFbaA02+zwN0E0zxOxi4l0j1/BNO4GOzVSoPw==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
