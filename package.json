@@ -58,6 +58,6 @@
   "dependencies": {
     "aws-cdk-lib": "2.117.0",
     "constructs": "10.3.0",
-    "esbuild": "0.19.10"
+    "esbuild": "0.19.11"
   }
 }
