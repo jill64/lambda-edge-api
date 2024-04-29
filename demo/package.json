@@ -7,7 +7,7 @@
     "lint": "npx eslint ."
   },
   "devDependencies": {
-    "@jill64/types-lambda": "1.2.0",
+    "@jill64/types-lambda": "1.2.1",
     "dotenv": "16.4.5",
     "vitest": "1.5.2"
   }
