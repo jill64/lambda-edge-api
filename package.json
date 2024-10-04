@@ -1,7 +1,7 @@
 {
   "name": "lambda-edge-api",
   "description": "🌐 Deploy your API to the edge using AWS-CDK",
-  "version": "1.1.74",
+  "version": "1.1.75",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
@@ -36,7 +36,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/lambda-edge-api.git",
-    "image": "https://opengraph.githubassets.com/d3b540c218ed6fe6177713ccd1d9f287a4b8d7bac95580ab6e9fcb50603dff30/jill64/lambda-edge-api"
+    "image": "https://opengraph.githubassets.com/f6daca86eb7a190dabf7fd55d97b6f44139ad413f0d1d6347d5ca4c9e1109d15/jill64/lambda-edge-api"
   },
   "scripts": {
     "build": "tsc && npx publint",
@@ -56,7 +56,7 @@
     "typescript": "5.6.2"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.160.0",
+    "aws-cdk-lib": "2.161.0",
     "constructs": "10.3.0",
     "esbuild": "0.24.0"
   }
