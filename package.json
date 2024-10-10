@@ -36,7 +36,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/lambda-edge-api.git",
-    "image": "https://opengraph.githubassets.com/831d36cfd168d4cb05eb2393c748d18c2dfb056af9a534bff6123d30c14f5573/jill64/lambda-edge-api"
+    "image": "https://opengraph.githubassets.com/810b7909780f381072a7258079c018cdcfcac245726bd1a7a5d4f9c53fe40087/jill64/lambda-edge-api"
   },
   "scripts": {
     "build": "tsc && npx publint",
