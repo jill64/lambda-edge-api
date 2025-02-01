@@ -8,8 +8,8 @@ importers:
   .:
     dependencies:
       aws-cdk-lib:
-        specifier: 2.174.0
-        version: 2.174.0(constructs@10.4.2)
+        specifier: 2.177.0
+        version: 2.177.0(constructs@10.4.2)
       constructs:
         specifier: 10.4.2
         version: 10.4.2
@@ -780,10 +780,10 @@ packages:
       }
     engines: { node: '>=12' }
 
-  aws-cdk-lib@2.174.0:
+  aws-cdk-lib@2.177.0:
     resolution:
       {
-        integrity: sha512-OHBJcsg0i4KftWVeUzw1AkG7onZWNNM/DH7NQnbDOs0Ap716VvtcTUubUpeFrazDWe9Opfn1essTjv6gaVyHBw==
+        integrity: sha512-nTnHAwjZaPJ5gfJjtzE/MyK6q0a66nWthoJl7l8srucRb+I30dczhbbXor6QCdVpJaTRAEliMOMq23aglsAQbg==
       }
     engines: { node: '>= 14.15.0' }
     peerDependencies:
@@ -2057,7 +2057,7 @@ snapshots:
 
   assertion-error@2.0.1: {}
 
-  aws-cdk-lib@2.174.0(constructs@10.4.2):
+  aws-cdk-lib@2.177.0(constructs@10.4.2):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.221
       '@aws-cdk/asset-kubectl-v20': 2.1.3
