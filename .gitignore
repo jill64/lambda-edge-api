@@ -5,4 +5,3 @@ node_modules
 /cdk.out
 .env
 package-lock.json
-pnpm-lock.yaml
