@@ -9,6 +9,6 @@
   "devDependencies": {
     "@jill64/types-lambda": "1.2.3",
     "dotenv": "16.4.7",
-    "vitest": "3.0.5"
+    "vitest": "3.0.6"
   }
 }
