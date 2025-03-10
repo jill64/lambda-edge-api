@@ -14,16 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4
-        with:
-          node-version: 20
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v1
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: latest
-          run_install: true
+      - name: Install dependencies
+        run: bun i
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@e3dd6a429d7300a6a4c196c26e071d42e0343502 # v4
@@ -33,10 +28,10 @@ jobs:
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
 
       - name: Build
-        run: pnpm build
+        run: bun run build
 
       - name: Deploy
-        run: pnpm deploy:demo
+        run: bun run deploy:demo
 
   test:
     needs: deploy
@@ -46,18 +41,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4
-        with:
-          node-version: 20
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v1
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: latest
-          run_install: true
+      - name: Install dependencies
+        run: bun i
 
       - name: Test
-        run: cd demo && pnpm test
+        run: cd demo && bun test
         env:
           PREVIEW_URL: ${{ vars.PREVIEW_URL }}

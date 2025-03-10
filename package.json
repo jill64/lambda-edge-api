@@ -1,9 +1,12 @@
 {
   "name": "lambda-edge-api",
   "description": "🌐 Deploy your API to the edge using AWS-CDK",
-  "version": "1.1.85",
+  "version": "1.2.0",
   "type": "module",
   "main": "dist/index.js",
+  "workspaces": [
+    "demo"
+  ],
   "license": "MIT",
   "author": {
     "name": "jill64",
@@ -36,17 +39,17 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/lambda-edge-api.git",
-    "image": "https://opengraph.githubassets.com/d7686136dc911dc27e3b9c1a49be26f6a7d21f9a847ea9e940a0ee94ddd2e411/jill64/lambda-edge-api"
+    "image": "https://opengraph.githubassets.com/ebe79a0db7e6d626784027296eb7ec02a7d95f012acb7e0af116a9c5420b4384/jill64/lambda-edge-api"
   },
   "scripts": {
-    "build": "tsc && npx publint",
-    "build:demo": "cd demo && pnpm build",
-    "deploy:demo": "cd demo && npm run deploy",
-    "prepack": "pnpm build",
-    "format": "npx prettier -w .",
-    "lint": "pnpm lint:lib && pnpm lint:demo",
-    "lint:lib": "npx eslint . && npx depcheck",
-    "lint:demo": "cd demo && pnpm lint"
+    "build": "tsc && bunx publint",
+    "build:demo": "cd demo && bun run build",
+    "deploy:demo": "cd demo && bun run deploy",
+    "prepack": "bun run build",
+    "format": "bunx prettier -w .",
+    "lint": "bun run lint:lib && bun run lint:demo",
+    "lint:lib": "eslint . && bunx depcheck",
+    "lint:demo": "cd demo && bun run lint"
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
@@ -58,6 +61,6 @@
   "dependencies": {
     "aws-cdk-lib": "2.177.0",
     "constructs": "10.4.2",
-    "esbuild": "0.24.2"
+    "esbuild": "0.25.0"
   }
 }

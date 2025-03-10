@@ -1,14 +1,15 @@
 {
+  "name": "demo",
   "type": "module",
   "scripts": {
-    "build": "npx tsx scripts/build.ts",
-    "deploy": "npx tsx scripts/deploy.ts",
-    "test": "vitest",
-    "lint": "npx eslint ."
+    "build": "bun scripts/build.ts",
+    "deploy": "bun scripts/deploy.ts",
+    "test": "bun test",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@jill64/types-lambda": "1.2.3",
     "dotenv": "16.4.7",
-    "vitest": "3.0.5"
+    "@types/bun": "1.2.4"
   }
 }
