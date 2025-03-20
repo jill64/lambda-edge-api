@@ -18,7 +18,7 @@
     "demo": {
       "name": "demo",
       "devDependencies": {
-        "@jill64/types-lambda": "1.2.3",
+        "@jill64/types-lambda": "1.2.4",
         "@types/bun": "1.2.5",
         "dotenv": "16.4.7",
       },
@@ -113,7 +113,7 @@
 
     "@jill64/prettier-config": ["@jill64/prettier-config@1.0.0", "", {}, "sha512-KuryQDStqkQ/zKR9Q7JXiW927m7SvwirQo6Oohss1Q9cRyYS2JOyhtcBavZnoEhH4pHJkaigfjUXA3em4n6egA=="],
 
-    "@jill64/types-lambda": ["@jill64/types-lambda@1.2.3", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-H4ZIoQJlgQoT6OT7nhn73IQypGf8m66EaNuL+EDX7F/Kz6IUtNQrsn1GQZrW2ouw7g1wEvvZRHWERkYbytrOSA=="],
+    "@jill64/types-lambda": ["@jill64/types-lambda@1.2.4", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-/NTX5xTTeJnuo8XQoHqrWXs0Gx+zu8jRpVhpOJCNsTjszkR+OgRMrMSCKRPZJVWS96ZXaPN+5zouZsjlB9/ZTw=="],
 
     "@nodelib/fs.scandir": ["@nodelib/fs.scandir@2.1.5", "", { "dependencies": { "@nodelib/fs.stat": "2.0.5", "run-parallel": "^1.1.9" } }, "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="],
 
