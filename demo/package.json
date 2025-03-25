@@ -10,6 +10,6 @@
   "devDependencies": {
     "@jill64/types-lambda": "1.2.4",
     "dotenv": "16.4.7",
-    "@types/bun": "1.2.5"
+    "@types/bun": "1.2.6"
   }
 }
