@@ -39,7 +39,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/lambda-edge-api.git",
-    "image": "https://opengraph.githubassets.com/ae1788d5961e8a89350f32506396e9773f5273ca675e5976553512d7c0d7fb8a/jill64/lambda-edge-api"
+    "image": "https://opengraph.githubassets.com/507760ca2f269e592d3b47c8286fbcd3b485e2b9489c930413cff708c9972db6/jill64/lambda-edge-api"
   },
   "scripts": {
     "build": "tsc && bunx publint",
@@ -53,7 +53,7 @@
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
-    "@jill64/eslint-config-ts": "2.0.26",
+    "@jill64/eslint-config-ts": "2.0.27",
     "@jill64/prettier-config": "1.0.0",
     "@types/node": "22.13.17",
     "typescript": "5.8.3"
